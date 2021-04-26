@@ -1,0 +1,39 @@
+body { margin: 0; }
+canvas { width: 100vh; height: 100vh }
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column1 {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 100vh; /* Should be removed. Only for demonstration */
+}
+.column2 {
+    float: left;
+    width: 60%;
+    padding: 0px;
+    margin: 0px;
+    height: 100vh; /* Should be removed. Only for demonstration */
+}
+.column3 {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 100vh; /* Should be removed. Only for demonstration */
+}
+
+/* #GAME{
+    height: 100%;
+    width: 100%;
+} */
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
