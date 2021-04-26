@@ -5,17 +5,46 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<title>Sky Fall</title>
 		<link rel="stylesheet" href="./css/index.css">
+		<link rel="stylesheet" href="./css/healthbar.css">
 	</head>
 	<body>
 		<script src="lib/three.js"></script>
-		<!-- <script type="module" src="lib/GLTFLoader.js"></script> -->
-		<script type="module" src="OrbitControls.js"></script>
+		<script type="module" src="lib/GLTFLoader.js"></script>
+		<script type="module" src="lib/OrbitControls.js"></script>
 		<script src='https://mamboleoo.be/learnThree/demos/OBJLoader.js'></script>
 		<div class="row">
-			<div class="column1" style="background-color: cornsilk;"></div>
+			<div class="column1" style="background-color: cornsilk;">
+				<div class="hltcontainer">
+					<div>
+						<h1 style="margin: 0;text-align: center;padding-top: 40px;">
+							SCORE
+						</h1>
+						<h2 id="SCOREBAR" style="text-align: center;">
+							1000
+						</h2>
+					</div>
+					<div>
+						<h1 style="margin: 0;text-align: center;padding-top: 40px;">
+							HEALTH
+						</h1>
+						<h2 id="HEALTHBAR" style="text-align: center;" >
+							1000
+						</h2>
+						<div id="HEALTHBARUI" class="vertical">
+							<div id="HEALTHBARUI2" class="progress-bar" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
 			<div id="GAME" class="column2"></div>
-			<div class="column3" style="background-color: cornsilk;"></div>
+			<div class="column3" style="background-color: cornsilk;">
+				<div class="hltcontainer">
+
+				</div>
+			</div>
 		</div>
+		<!-- <progress id="health" value="100" max="100"></progress> -->
 		<script type="module" src="index.js">
 		</script>
 	</body>
