@@ -112,7 +112,7 @@ var Star1
 var Star2
 var Star3
 var sta1 = Objloader.load(
-    "../odel/star/star.obj",
+    "../model/star/star.obj",
     function(mm){
         console.log("star",mm)
         mm.scale['x']=5
@@ -135,7 +135,7 @@ var sta1 = Objloader.load(
     }
 )
 var sta2 = Objloader.load(
-    "../odel/star/star.obj",
+    "../model/star/star.obj",
     function(mm){
         console.log("star",mm)
         mm.scale['x']=5
@@ -158,7 +158,7 @@ var sta2 = Objloader.load(
     }
 )
 var sta3 = Objloader.load(
-    "../odel/star/star.obj",
+    "../model/star/star.obj",
     function(mm){
         console.log("star",mm)
         mm.scale['x']=5
@@ -181,31 +181,31 @@ var sta3 = Objloader.load(
     }
 )
 var mmtex = Texloader.load(
-    "../odel/AIM-54_Phoenix_OBJ/AIM-54\ phoenix\ texture.jpeg",
+    "../model/AIM-54_Phoenix_OBJ/AIM-54\ phoenix\ texture.jpeg",
     function(mmt){
         Missile_Tex=mmt
     },
 )
 var pltex = Texloader.load(
-    "../odel/player/Jet_by_dommk/textures/jet_by_dommk_Base_Color.png",
+    "../model/player/Jet_by_dommk/textures/jet_by_dommk_Base_Color.png",
     function(plt){
         Player1_Tex1=plt 
     },
 )
 var pltex = Texloader.load(
-    "../odel/player/Jet_by_dommk/textures/jet_by_dommk_Emissive.png",
+    "../model/player/Jet_by_dommk/textures/jet_by_dommk_Emissive.png",
     function(plt){
         Player1_Tex2=plt 
     },
 )
 var pltex = Texloader.load(
-    "../odel/Feisar_Ship_OBJ/maps/ok.jpg",
+    "../model/Feisar_Ship_OBJ/maps/ok.jpg",
     function(plt){
         Player2_Tex1=plt 
     },
 )
 var pl = Objloader.load(
-    "../odel/player/Jet_by_dommk/model/jet_by_dommk.obj",
+    "../model/player/Jet_by_dommk/model/jet_by_dommk.obj",
     function(player){
         player.scale['x'] =0.08
         player.scale['y'] =0.08
@@ -227,7 +227,7 @@ var pl = Objloader.load(
 	}
 )
 var pl2 = Objloader.load(
-    "../odel/Feisar_Ship_OBJ/Feisar_Ship.obj",
+    "../model/Feisar_Ship_OBJ/Feisar_Ship.obj",
     function(player){
         player.scale['x'] =0.45
         player.scale['y'] =0.45
@@ -248,7 +248,7 @@ var pl2 = Objloader.load(
 	}
 )
 var pl31 = Objloader.load(
-    "../odel/op.obj",
+    "../model/op.obj",
     function(player){
         player.rotation['x']= -1.57
         player.rotation['y']= -1.41
@@ -273,7 +273,7 @@ var pl31 = Objloader.load(
 	}
 )
 var pl32 = Objloader.load(
-    "../odel/op.obj",
+    "../model/op.obj",
     function(player){
         player.rotation['x']= -1.57
         player.rotation['y']= -1.73
@@ -298,7 +298,7 @@ var pl32 = Objloader.load(
 	}
 )
 var pl33 = Objloader.load(
-    "../odel/op.obj",
+    "../model/op.obj",
     function(player){
         player.rotation['x']= -1.57
         player.rotation['y']= -1.25
@@ -323,7 +323,7 @@ var pl33 = Objloader.load(
 	}
 )
 var pl34 = Objloader.load(
-    "../odel/op.obj",
+    "../model/op.obj",
     function(player){
         player.rotation['x']= -1.57
         player.rotation['y']= -1.89
@@ -619,7 +619,7 @@ function fire(){
     console.log(Player2)
     var Missile1
     var mis = Objloader.load(
-        "../odel/AIM-54_Phoenix_OBJ/AIM-54_Phoenix.obj",
+        "../model/AIM-54_Phoenix_OBJ/AIM-54_Phoenix.obj",
         function(mm){
             console.log("mm",mm)
             mm.scale['x']=0.1
