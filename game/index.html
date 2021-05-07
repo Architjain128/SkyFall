@@ -6,32 +6,29 @@
 		<title>Sky Fall</title>
 		<link rel="stylesheet" href="./css/index.css">
 		<link rel="stylesheet" href="./css/healthbar.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 		<script src="lib/three.js"></script>
 		<script type="module" src="lib/GLTFLoader.js"></script>
 		<script type="module" src="lib/OrbitControls.js"></script>
 		<script src='https://mamboleoo.be/learnThree/demos/OBJLoader.js'></script>
+		
 		<div class="row">
 			<div class="column1" style="background-color: cornsilk;">
 				<div class="hltcontainer">
 					<div>
-						<h1 style="margin: 0;text-align: center;padding-top: 40px;">
-							SCORE
-						</h1>
-						<h2 id="SCOREBAR" style="text-align: center;">
-							1000
-						</h2>
-						<br/>
+						<h2 style="margin: 0;text-align: center;padding-top: 20px;">SCORE</h2>
+						<h3 id="SCOREBAR" style="text-align: center;">1000</h3>
 					</div>
 					<hr style="background-color: cornsilk;height: 15px;"/>
 					<div>
-						<h1 style="margin: 0;text-align: center;padding-top: 20px;">
+						<h2 style="margin: 0;text-align: center;padding-top: 20px;">
 							HEALTH
-						</h1>
-						<h2 id="HEALTHBAR" style="text-align: center;" >
-							1000
 						</h2>
+						<h3 id="HEALTHBAR" style="text-align: center;" >
+							1000
+						</h3>
 						<div id="HEALTHBARUI" class="vertical">
 							<div id="HEALTHBARUI2" class="progress-bar" aria-valuemin="0" aria-valuemax="100"></div>
 						</div>
@@ -39,13 +36,17 @@
 					<br/>
 					<hr style="background-color: cornsilk;height: 15px;"/>
 					<div>
-						<h3 id="MISS" style="margin: 0;text-align: center;padding-top: 30px;">
-							MISSILE REMAINING : 10
-						</h3>
+						<h3 id="MISS" style="margin: 0;text-align: center;padding-top: 30px;">MISSILE REMAINING : 10</h3>
 						<h3 id="ENUM" style="padding: 10px;text-align: center;" aria-valuemin="0" aria-valuemax="100">ENEMY REMAINING : 5</h3>
-
 					</div>
-					
+					<hr style="background-color: cornsilk;height: 15px;"/>
+					<div>
+						<a href="https://www.youtube.com/watch?v=PXi7Kpu8-FQ" style="text-decoration: none;color: white;margin: 0;text-align: center;padding-left: 20px;font-size: larger;"><i class="fa fa-youtube-play" style="padding-right: 15px;color:red;" ></i>Watch Trailer</a>
+						<br style="height: 1px;"/>
+						<br/><a href="https://architjain128.github.io" style="text-decoration: none;color: white;margin: 0;text-align: center;padding-left: 20px;font-size: larger;"><i class="fa fa-link" style="padding-right: 15px;"></i>Visit my Website</a>
+						<br style="height: 1px;"/>
+						<br/><a href="https://architjain128.github.io" style="text-decoration: none;color: white;margin: 0;text-align: center;padding-left: 20px;font-size: larger;">Made with<i class="fa fa-heart" style="padding-right: 5px;padding-left: 5px;color: red;"></i>by Archit Jain</a>
+					</div>
 				</div>
 			</div>
 			<div id="GAME" class="column2">
